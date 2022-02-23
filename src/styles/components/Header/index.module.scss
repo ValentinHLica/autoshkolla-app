@@ -1,0 +1,30 @@
+.header {
+  padding: 10px 2vw;
+  border-bottom: 1px solid var(--gray-cool-200);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+
+    svg {
+      font-size: 1.3em;
+
+      path {
+        fill: var(--blue-700);
+      }
+    }
+  }
+
+  button {
+    svg {
+      path {
+        color: var(--gray-cool-200);
+      }
+    }
+  }
+}
