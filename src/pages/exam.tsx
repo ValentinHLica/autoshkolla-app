@@ -5,7 +5,12 @@ import { ExamOptions, QuestionList } from "@interface/utils";
 import questionsData from "@data/questions.json";
 
 import { Button, Checkbox, Modal } from "@ui";
-import { ChevronLeftIcon, ChevronRightIcon, EyeOpenIcon } from "@icon";
+import {
+  ChevronLeftIcon,
+  ChevronRightIcon,
+  EyeOpenIcon,
+  ImageIcon,
+} from "@icon";
 import { randomQuestions } from "@utils/helpers";
 
 import styles from "@styles/pages/exam.module.scss";
@@ -105,7 +110,11 @@ const Exam: React.FC = () => {
 
           <div className={styles.question__details}>
             <div className={styles.question__image}>
-              {image && <img src={`/images/${image}.png`} alt="Question" />}
+              {image ? (
+                <img src={`/images/${image}.png`} alt="Question" />
+              ) : (
+                <ImageIcon />
+              )}
             </div>
 
             <div className={styles.question__vote}>

@@ -1,3 +1,5 @@
+@import "../../responsivity";
+
 .modal__background {
   background-color: var(--gray-cool-800);
   opacity: 0.6;
@@ -7,10 +9,18 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 40vw;
+  max-width: 80vw;
   height: fit-content;
   margin: auto;
   transform: scale(1);
+
+  @include responsive(mobile-large) {
+    max-width: 60vw;
+  }
+
+  @include responsive(pc-small) {
+    max-width: 40vw;
+  }
 
   &__hidden {
     transform: scale(0.9);

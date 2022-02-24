@@ -36,14 +36,21 @@
         width: 220px;
         height: 220px;
         display: flex;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--gray-cool-200);
+        border: 1px solid var(--gray-cool-300);
+        border-radius: var(--border-radius);
 
         img {
           max-width: 220px;
           max-height: 220px;
-          border-radius: var(--border-radius);
-          border: 1px solid var(--gray-cool-300);
           padding: 5px;
+        }
+
+        svg {
+          font-size: 3em;
+          fill: var(--gray-cool-600);
         }
       }
 
@@ -112,9 +119,9 @@
           box-shadow var(--transition-duration) var(--transition-animation);
 
         &:hover {
-          background-color: var(--gray-cool-300);
-          border-color: var(--gray-cool-400);
-          box-shadow: 0 0 0 2px var(--gray-cool-400);
+          background-color: var(--gray-cool-200);
+          border-color: var(--gray-cool-300);
+          box-shadow: 0 0 0 2px var(--gray-cool-300);
         }
 
         &__answered {
