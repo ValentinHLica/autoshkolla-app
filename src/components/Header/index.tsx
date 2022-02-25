@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
+import { Button } from "@ui";
 import { LogoIcon } from "@icon";
 
 import styles from "@styles/components/Header/index.module.scss";
-import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
   return (

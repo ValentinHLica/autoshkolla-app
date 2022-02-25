@@ -121,7 +121,7 @@
         &:hover {
           background-color: var(--gray-cool-200);
           border-color: var(--gray-cool-300);
-          box-shadow: 0 0 0 2px var(--gray-cool-300);
+          box-shadow: 0 0 0 3px var(--gray-cool-300);
         }
 
         &__answered {
@@ -132,7 +132,7 @@
           &:hover {
             background-color: var(--blue-500);
             border-color: var(--blue-500);
-            box-shadow: 0 0 0 2px var(--gray-cool-500);
+            box-shadow: 0 0 0 3px var(--blue-300);
           }
         }
 
@@ -144,7 +144,7 @@
           &:hover {
             background-color: var(--blue-700);
             border-color: var(--blue-400);
-            box-shadow: 0 0 0 2px var(--blue-400);
+            box-shadow: 0 0 0 3px var(--blue-400);
           }
         }
       }

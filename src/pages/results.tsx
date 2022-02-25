@@ -47,7 +47,7 @@ const Results: React.FC = () => {
         }`}
       >
         <div className={styles.result__title}>
-          <XSolidIcon />
+          {hasFailed ? <XSolidIcon /> : <CheckSolidIcon />}
 
           <h1>{hasFailed ? "Fatekeqesisht nuk kaloni!" : "Suksese kaluat!"}</h1>
         </div>
@@ -75,14 +75,14 @@ const Results: React.FC = () => {
         <ul className={styles.question__stats}>
           <li>
             <span>
-              <strong>Ju Mbaruat Provimin ne:</strong> <ClockIcon />{" "}
+              <strong>Ju mbaruat provimin ne:</strong> <ClockIcon />{" "}
               {40 - timeCounter} min
             </span>
           </li>
           <li>
             <span>
               <CheckSolidIcon />
-              <strong>Pergjigje te Sakta: </strong>
+              <strong>Pergjigje te sakta: </strong>
               {correctQuestions.length}
             </span>
             <span>

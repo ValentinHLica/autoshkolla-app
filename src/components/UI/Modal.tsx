@@ -19,7 +19,7 @@ const Modal: React.FC<Props> = ({ visible, setVisible, children }) => {
       <div
         className={`${styles.modal} ${!visible ? styles.modal__hidden : ""}`}
       >
-        <div className={styles.modal__content}>{children}</div>
+        {children}
       </div>
     </>
   );
