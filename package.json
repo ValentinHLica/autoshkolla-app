@@ -21,7 +21,8 @@
     "eject": "react-app-rewired eject",
     "tauri": "tauri",
     "dev": "tauri dev",
-    "package": "tauri build"
+    "package": "tauri build",
+    "update": "npm update && cd src-tauri && cargo update"
   },
   "eslintConfig": {
     "extends": [
