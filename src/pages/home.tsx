@@ -35,7 +35,7 @@ const HomePage: React.FC = () => {
 
   return (
     <div className={styles.home}>
-      <img src="/illustrations/drawkit-transport-scene-13.svg" alt="Intro" />
+      <img src="/images/illustrations/landing.svg" alt="Intro" />
 
       <ul className={styles.options}>
         {options.map((options, index) => {

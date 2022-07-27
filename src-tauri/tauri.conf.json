@@ -13,7 +13,7 @@
     "bundle": {
       "active": true,
       "targets": "all",
-      "identifier": "com.tauri.autoshkolla",
+      "identifier": "com.autoshkolla.app",
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",
@@ -28,13 +28,10 @@
       "shortDescription": "",
       "longDescription": "",
       "deb": {
-        "depends": [],
-        "useBootstrapper": false
+        "depends": []
       },
       "macOS": {
         "frameworks": [],
-        "minimumSystemVersion": "",
-        "useBootstrapper": false,
         "exceptionDomain": "",
         "signingIdentity": null,
         "providerShortName": null,
@@ -46,19 +43,16 @@
         "timestampUrl": ""
       }
     },
-    "updater": {
-      "active": false
-    },
     "allowlist": {
       "all": true
     },
     "windows": [
       {
-        "title": "Autoshkolla",
-        "minWidth": 800,
-        "minHeight": 600,
-        "width": 1000,
-        "height": 700,
+        "title": "Autoshkolla App",
+        "minWidth": 1280,
+        "width": 1280,
+        "minHeight": 720,
+        "height": 720,
         "resizable": true,
         "center": true
       }

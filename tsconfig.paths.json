@@ -11,6 +11,7 @@
       "@config/*": ["config/*"],
       "@data/*": ["data/*"],
       "@styles/*": ["styles/*"],
+      "@images/*": ["images/*"],
       "@pages/*": ["pages/*"]
     }
   }

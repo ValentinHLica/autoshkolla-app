@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 
 import { ExamOptions, QuestionList } from "@interface/utils";
 import questionsData from "@data/questions.json";
@@ -17,6 +17,7 @@ import styles from "@styles/pages/exam.module.scss";
 
 const Exam: React.FC = () => {
   const { type } = useParams() as { type: ExamOptions };
+  const navigate = useNavigate();
 
   const [questions, setQuestions] = useState<QuestionList[]>([]);
   const [questionIndex, setQuestionIndex] = useState<number>(0);
@@ -48,6 +49,14 @@ const Exam: React.FC = () => {
   //     break;
   // }
   // };
+
+  useEffect(() => {
+    if (timeCounter === 0) {
+      navigate("/results", {
+        state: { questions, timeCounter },
+      });
+    }
+  }, [timeCounter]);
 
   useEffect(() => {
     setQuestions(
@@ -111,7 +120,7 @@ const Exam: React.FC = () => {
           <div className={styles.question__details}>
             <div className={styles.question__image}>
               {image ? (
-                <img src={`/images/${image}.png`} alt="Question" />
+                <img src={`/images/signs/${image}.png`} alt="Question" />
               ) : (
                 <ImageIcon />
               )}
@@ -190,7 +199,7 @@ const Exam: React.FC = () => {
 
           <img
             className={styles.modal__image}
-            src="/illustrations/drawkit-transport-scene-2.svg"
+            src="/images/illustrations/proceed.svg"
             alt="End"
           />
 
