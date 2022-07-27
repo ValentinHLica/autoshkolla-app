@@ -6,9 +6,9 @@
   flex-direction: column;
 
   img {
-    max-width: 70vw;
-    margin-top: -50px;
+    display: flex;
     margin-bottom: 60px;
+    max-height: 50vh;
   }
 
   .options {

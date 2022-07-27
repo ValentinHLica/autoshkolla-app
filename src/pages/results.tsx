@@ -54,8 +54,8 @@ const Results: React.FC = () => {
 
         <div className={styles.illustration}>
           <img
-            src={`/illustrations/drawkit-transport-scene-${
-              hasFailed ? 10 : 3
+            src={`/images/illustrations/${
+              hasFailed ? "failed" : "success"
             }.svg`}
             alt="Illustration"
           />
@@ -131,7 +131,10 @@ const Results: React.FC = () => {
                   <div className={styles.question__content}>
                     <div className={styles.image}>
                       {image ? (
-                        <img src={`/images/${image}.png`} alt="Question" />
+                        <img
+                          src={`/images/signs/${image}.png`}
+                          alt="Question"
+                        />
                       ) : (
                         <ImageIcon />
                       )}

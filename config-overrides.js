@@ -11,6 +11,7 @@ module.exports = function override(config) {
     "@interface": "src/interface",
     "@styles": "src/styles",
     "@utils": "src/utils",
+    "@images": "src/images",
     "@data": "src/data",
   })(config);
 
